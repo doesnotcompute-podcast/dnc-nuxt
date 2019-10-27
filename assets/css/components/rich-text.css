@@ -1,0 +1,33 @@
+.rich-text h1 {
+  @apply text-5xl my-4;
+}
+
+.rich-text h2 {
+  @apply text-3xl my-4;
+}
+
+.rich-text h3 {
+  @apply text-2xl my-4;
+}
+
+.rich-text p {
+  @apply my-4;
+}
+
+.rich-text a {
+  @apply text-black underline;
+}
+
+.rich-text ol,
+.rich-text ul {
+  @apply pl-4 my-4;
+  list-style-position: inside;
+}
+
+.rich-text ol {
+  list-style-type: lower-roman;
+}
+
+.rich-text ul {
+  list-style-type: disc;
+}

@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './components/buttons.css';
+/*@import './components/pagination.css';*/
+@import './components/rich-text.css';
+@import './components/plyr-custom.css';
+
+.debug {
+  outline: 1px solid red;
+}
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.text-6xl {
+  font-size: 5rem;
+}
+
+.bg-adaptive-light {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-adaptive-dark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text-overflow-ellipsis {
+  @apply overflow-hidden whitespace-no-wrap;
+  text-overflow: ellipsis;
+}
